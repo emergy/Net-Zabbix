@@ -35,6 +35,17 @@ my $r = $z->get("host", {
 
 ### Example 2
 
+Place config zabbix_api.yml to project/etc ($RealBin/../etc)
+
+```yml
+url: "https://zabbix.host.corp"
+username: "api"
+password: "p@$$w0rd"
+
+```
+
+and use simple syntax
+
 ```perl
 use Net::Zabbix::Simple;
 
