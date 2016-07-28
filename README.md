@@ -11,7 +11,7 @@ Consult Zabbix API documentation for details.
 
 ### Note
 
-Module is fully compatible with Zabbix 3.0 and 1.8.
+Module is fully compatible with Zabbix 3.0 and 2.2.
 
 ### Example
 
