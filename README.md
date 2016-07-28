@@ -6,13 +6,12 @@ as that is work for-and already implemented on server side.
 
 Consult Zabbix API documentation for details.
 
-- http://www.zabbix.com/wiki/doc/api
-- http://www.zabbix.com/documentation/1.8/api
-- http://www.zabbix.com/documentation/2.0/manual/appendix/api/api
+- https://www.zabbix.com/documentation/2.4/manual/api/reference
+- https://www.zabbix.com/documentation/3.0/manual/api/reference
 
 ### Note
 
-Module is fully compatible with Zabbix 2.0 and 1.8.
+Module is fully compatible with Zabbix 3.0 and 1.8.
 
 ### Example
 
@@ -31,6 +30,19 @@ my $r = $z->get("host", {
         },
     }
 );
+
+```
+
+### Example 2
+
+```perl
+use Net::Zabbix::Simple;
+
+my $result = zabbix_request('host.get', {
+    search => {
+        name => 'hostname',
+    },
+}) or die zabbix_print_error();
 
 ```
 
