@@ -317,8 +317,8 @@ sub raw_request {
 	}
 	
 	if ($params) {
-		$params->{output} = $self->{Output}
-			if (reftype($params) eq 'HASH' and not defined $params->{output});
+# 		$params->{output} = $self->{Output}
+# 			if (reftype($params) eq 'HASH' and not defined $params->{output});
 	}
 	else {
 		$params = [];
